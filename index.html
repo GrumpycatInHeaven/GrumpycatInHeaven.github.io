@@ -1,5 +1,39 @@
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css" />
-    <button id="change-chart">Change to Classic</button>
-    <div id="chart_div" style="width: 800px; height: 500px;"></div><div></div>
-   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="display:flex; justify-content: center; padding-top: 20%;">
+    <form action="analyze.html" style="display: grid;">
+        <label for="file-upload" class="custom-file-upload">
+            Загрузить данные
+        </label> <input id="file-upload" type="file"/>
+        <input class="button" type="submit" value="Анализировать"></input>
+    </form>
+</body>
+</html>
+
+<style>
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.button {
+    background-color: white;
+    border: 2px solid #4CAF50; /* Green */
+    color: #4CAF50;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+</style>
